@@ -1,0 +1,123 @@
+index.html
+<!DOCTYPE html>
+<html lang="sd" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GBELS Wassan | آفيشل ويب سائيٽ</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f7f6; color: #333; scroll-behavior: smooth; }
+        header { background: #004d40; color: white; padding: 30px 20px; text-align: center; border-bottom: 8px solid #ffc107; }
+        .logo { width: 80px; height: 80px; background: #fff; border-radius: 50%; padding: 5px; margin-bottom: 10px; }
+        
+        nav { background: #242526; display: flex; justify-content: center; padding: 10px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav a { color: white; text-decoration: none; padding: 10px 15px; font-weight: bold; font-size: 0.9em; }
+        nav a:hover { color: #ffc107; }
+
+        section { padding: 40px 20px; max-width: 1100px; margin: auto; }
+        .section-title { text-align: center; color: #004d40; margin-bottom: 30px; font-size: 1.8em; border-bottom: 3px solid #ffc107; display: inline-block; padding-bottom: 5px; position: relative; left: 50%; transform: translateX(-50%); }
+
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+        .gallery-item { background: white; padding: 8px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .gallery-item img { width: 100%; height: 200px; object-fit: cover; border-radius: 5px; }
+        .gallery-item p { text-align: center; margin: 8px 0 0; font-weight: bold; font-size: 0.9em; color: #555; }
+
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-bottom: 30px; }
+        .stat-card { background: white; padding: 15px; border-radius: 8px; text-align: center; border-top: 4px solid #004d40; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .stat-card h2 { font-size: 2em; margin: 5px 0; color: #004d40; }
+
+        .info-table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; font-size: 0.9em; }
+        .info-table th { background: #004d40; color: white; padding: 12px; text-align: right; }
+        .info-table td { padding: 10px; border-bottom: 1px solid #eee; text-align: right; }
+
+        .admission-box { background: #fff; max-width: 450px; margin: auto; padding: 25px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); border-right: 5px solid #25d366; }
+        .form-group { margin-bottom: 12px; text-align: right; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .form-group input, .form-group select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; }
+        .btn-wa { background: #25d366; color: white; border: none; padding: 12px; border-radius: 6px; width: 100%; font-size: 1em; cursor: pointer; font-weight: bold; }
+
+        .map-container { background: white; padding: 15px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-top: 20px; text-align: center; }
+        footer { background: #1c1e21; color: #aaa; padding: 30px 20px; text-align: center; font-size: 0.85em; }
+    </style>
+</head>
+<body>
+
+<header id="home">
+    <img src="https://via.placeholder.com/80?text=GBELS" alt="Logo" class="logo">
+    <h1>گورنمينٽ بوائز ايليمينٽري لوئر سيڪنڊري اسڪول وسڻ</h1>
+    <p>SEMIS ID: 416040489 | ضلعو: نوشهرو فيروز</p>
+</header>
+
+<nav>
+    <a href="#home">هوم</a>
+    <a href="#gallery">گيلري</a>
+    <a href="#staff">استاد</a>
+    <a href="#admission">داخلا</a>
+    <a href="#location">لوڪيشن</a>
+</nav>
+
+<section id="gallery">
+    <h2 class="section-title">اسڪول جون تصويرون</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item"><img src="1000092083.png"><p>اسڪول بلڊنگ</p></div>
+        <div class="gallery-item"><img src="1000092084.png"><p>اسڪول اسٽاف</p></div>
+        <div class="gallery-item"><img src="1000092085.png"><p>ڪلاس روم</p></div>
+        <div class="gallery-item"><img src="1000092086.png"><p>سرگرميون</p></div>
+    </div>
+</section>
+
+<section id="staff">
+    <h2 class="section-title">تعليمي عملو</h2>
+    <table class="info-table">
+        <thead><tr><th>نالو</th><th>عهدو</th><th>قابليت</th></tr></thead>
+        <tbody>
+            <tr><td>منير احمد پٽ غلام رسول</td><td>PST (BPS-14)</td><td>B.A</td></tr>
+            <tr><td>توفيق احمد پٽ بشير احمد</td><td>PST (BPS-14)</td><td>B.Sc</td></tr>
+            <tr><td>آفتاب احمد مورو پٽ احمد بخش</td><td>PST (BPS-9)</td><td>M.A</td></tr>
+            <tr><td>علي شير وسڻ پٽ محمد اسحاق</td><td>PST (BPS-9)</td><td>B.A/PTC</td></tr>
+            <tr><td>افتخار احمد پٽ احمد بخش مورو</td><td>PST (BPS-9)</td><td>M.A</td></tr>
+            <tr><td>مهدي کوسو پٽ علي نواز</td><td>PST (BPS-9)</td><td>M.A</td></tr>
+            <tr><td>نيڪ محمد پٽ دور محمد</td><td>PST (BPS-9)</td><td>M.A</td></tr>
+            <tr><td>سرفراز علي وسڻ پٽ روشن علي</td><td>PST (BPS-9)</td><td>M.A</td></tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="admission">
+    <h2 class="section-title">آن لائن داخلا</h2>
+    <div class="admission-box">
+        <div class="form-group"><label>شاگرد جو نالو:</label><input type="text" id="sName"></div>
+        <div class="form-group"><label>والد جو نالو:</label><input type="text" id="fName"></div>
+        <div class="form-group"><label>ڪلاس:</label><select id="sClass"><option>پهرين</option><option>ٻي</option><option>ٽي</option><option>چوٿين</option><option>پنجين</option></select></div>
+        <button onclick="sendWhatsApp()" class="btn-wa">درخواست موڪليو 💬</button>
+    </div>
+</section>
+
+<section id="location">
+    <h2 class="section-title">اسڪول ڪٿي آهي؟</h2>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.431201538356!2d68.08328647535492!3d26.776059676728045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c879fa1cfb179%3A0xbcfe9baff8f80023!2sGBELS%20Wassan!5e0!3m2!1sen!2spk!4v1700000000000!5m2!1sen!2spk" width="100%" height="350" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy"></iframe>
+        <p style="margin-top: 15px;">
+            <a href="https://maps.google.com/?cid=10159834540914769955&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNl" target="_blank" style="display: inline-block; background: #004d40; color: white; padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: bold;">📍 گوگل ميپ تي رستو ڏسو</a>
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>📍 GBELS وسڻ، نوشهرو فيروز | 📞 رابطو: 923013875347+</p>
+    <p>© 2026 سڀ حق محفوظ آهن</p>
+</footer>
+
+<script>
+    function sendWhatsApp() {
+        var name = document.getElementById('sName').value;
+        var father = document.getElementById('fName').value;
+        var sClass = document.getElementById('sClass').value;
+        if(name=="" || father=="") { alert("فارم ڀريو"); return; }
+        var msg = "*داخلا درخواست*%0a*شاگرد:* "+name+"%0a*والد:* "+father+"%0a*ڪلاس:* "+sClass;
+        window.open("https://wa.me/923013875347?text=" + msg, '_blank');
+    }
+</script>
+
+</body>
+</html>
